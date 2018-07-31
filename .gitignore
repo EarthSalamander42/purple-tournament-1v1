@@ -1,0 +1,9 @@
+*.bin
+*.vpk
+*_c
+game/panorama/layout/custom_game/custom_ui_manifest.vxml_c
+*.cfg
+*.soc
+game/rich_presence_persistent_data.txt
+game/server_log.txt
+game/demoheader.tmp

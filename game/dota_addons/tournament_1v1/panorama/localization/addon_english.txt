@@ -1,0 +1,15 @@
+"addon"
+{
+	"Unassigned"					"Unassigned Team"
+	"Spectator"						"Spectator Team"
+	"Neutrals"						"Neutral Team"
+	"NoTeam"						"No Team"
+
+//	"DOTA_GoodGuys"					"Teal Tiger"
+//	"DOTA_BadGuys"					"Yellow Monkey"
+	
+	"addonname"						"Purple Tournament 1v1"
+
+	"dota_hud_error_cant_purchase_1v1"		"You can't purchase this item in 1v1!"
+	"dota_hud_error_cant_shrine_1v1"		"Shrines are disabled in 1v1!"
+}

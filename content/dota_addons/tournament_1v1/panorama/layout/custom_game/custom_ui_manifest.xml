@@ -1,0 +1,28 @@
+<root>
+	<script>
+
+		//Hide Vanilla Picking Screen
+//		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_TEAMS, false );			//Hero selection Radiant and Dire player lists.
+//		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_GAME_NAME, false );		//Hero selection game mode name display.
+//		GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_CLOCK, false );
+
+		// Add spectator slots.
+		GameUI.CustomUIConfig().team_select = {
+			"bShowSpectatorTeam" : true
+		};
+
+		GameEvents.Subscribe("CreateIngameErrorMessage", function(data) 
+		{
+			GameEvents.SendEventClientSide("dota_hud_error_message", 
+			{
+				"splitscreenplayer": 0,
+				"reason": data.reason || 80,
+				"message": data.message
+			})
+		})
+	</script>
+
+//	<Panel>
+//		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/companion.xml" />
+//	</Panel>
+</root>

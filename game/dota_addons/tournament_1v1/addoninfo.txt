@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"TeamCount"		"3"
+	"maps"			"dota"
+	"IsPlayable"	"1"
+
+	"dota"
+	{
+		"MaxPlayers"                    "12"
+	}
+}
